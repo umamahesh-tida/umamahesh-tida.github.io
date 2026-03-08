@@ -3,74 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Latest news and announcements from BISON CAD Lab at NDSU – NSF CAREER Award, grants, student achievements, and lab milestones." />
   <title>News – BISON CAD @ NDSU</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    body { font-family: 'Inter', sans-serif; margin: 0; background: #f4f7fa; color: #222; }
-    header { background: #002d72; color: #fff; padding: 2rem 1rem; text-align: center; }
-    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-    header p { font-size: 1.1rem; margin: 0.3rem 0; }
-    nav { background: #fff; padding: 0.8rem; box-shadow: 0 2px 6px rgba(0,0,0,0.05); text-align: center; }
-    nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
-    nav a { color: #002d72; font-weight: 700; text-decoration: none; padding: 0.4rem 0.8rem; border-radius: 4px; transition: background 0.2s; }
-    nav a:hover { background: #e6f0ff; }
-    section { max-width: 960px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-    section h2 { color: #002d72; margin-bottom: 1rem; }
-    .news-item { margin-bottom: 2rem; }
-    .news-item h3 { margin-bottom: 0.5rem; color: #002d72; }
-    .news-item p { margin: 0.3rem 0; font-size: 1.05rem; }
-    .date { font-size: 0.9rem; color: #555; }
-    footer { background: #e8edf3; text-align: center; padding: 1.5rem; margin-top: 2rem; font-size: 0.9rem; }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>BISON CAD</h1>
-    <p>Integrated Circuit Design Automation & Hardware for Machine Learning @ NDSU</p>
-    <p>Led by Dr. Umamaheswara Rao Tida</p>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="teaching.html">Teaching</a></li>
-      <li><a href="mentoring.html">Mentoring</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="news.html">News</a></li>
-    </ul>
-  </nav>
-  <section>
-    <h2>Lab News & Announcements</h2>
 
-    <div class="news-item">
-      <h3>Four Students Participated in Young Fellows Program at Design Automation Conference</h3>
-      <p class="date">June 2025</p>
-      <p> Congratulations to Yuma Ishimura, Ifedayo Akinfemisoye, Navya Goli and Tejaswi Dhandu!</p>
+<nav class="navbar">
+  <a href="index.html" class="navbar-brand"><span class="dot">◆</span> BISON CAD</a>
+  <ul class="navbar-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
+    <li><a href="mentoring.html">Mentoring</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="news.html" class="active">News</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <h1>Lab News &amp; Announcements</h1>
+  <p>Awards, grants, student achievements, and milestones from the BISON CAD Lab.</p>
+</div>
+
+<div class="section">
+  <div class="news-grid" style="grid-template-columns: 1fr;">
+
+    <div class="news-card">
+      <div class="news-date">June 2025</div>
+      <h3>🎓 Four Students Participated in Young Fellows Program at Design Automation Conference</h3>
+      <p>Congratulations to <strong>Yuma Ishimura, Ifedayo Akinfemisoye, Navya Goli, and Tejaswi Dhandu</strong> for being selected to participate in the prestigious Young Fellows Program at the Design Automation Conference (DAC) 2025! This program recognizes outstanding graduate students in EDA, chip design, and related fields.</p>
     </div>
 
-    <div class="news-item">
-        <h3>NSF CAREER Award Received by Dr. Tida</h3>
-        <p class="date">February 2025</p>
-        <p>We are proud to announce that Dr. Umamaheswara Rao Tida has received the prestigious <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2443244" target="_blank">NSF CAREER Award</a> to support research on advanced CAD tools for Monolithic 3D ICs and Machine Learning hardware at NDSU.</p>
-    </div>
-    <div class="news-item">
-        <h3>NSF IRES Award for International Research Experience</h3>
-        <p class="date">June 2025</p>
-        <p>Dr. Tida received an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2505405" target="_blank">NSF IRES grant</a> with the role of Co-PI, supporting international research experiences in advanced CAD methodologies and Machine Learning hardware.</p>
+    <div class="news-card">
+      <div class="news-date">June 2025</div>
+      <h3>🌐 NSF IRES Award for International Research Experience</h3>
+      <p>Dr. Tida received an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2505405" target="_blank"><strong>NSF IRES grant</strong></a> as Co-PI, supporting international research experiences on RFID Sensing Systems with Machine Learning. This grant provides students with the opportunity to engage in cutting-edge international research collaborations in advanced CAD methodologies and hardware.</p>
     </div>
 
-    <div class="news-item">
-        <h3>NSF Award for Future Manufacturing</h3>
-        <p class="date">March 2025</p>
-        <p>Dr. Tida received an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2427896" target="_blank">NSF grant</a> with the role of Co-PI to investigate novel, low-cost, viral-free manufacturing strategies for CAR T-cell therapies. This research focuses on developing distributed, mRNA-based methods to engineer Chimeric Antigen Receptor (CAR) T-cells without viral gene transfer, aiming to reduce costs and improve safety for advanced cell-based cancer treatments.</p>
+    <div class="news-card">
+      <div class="news-date">March 2025</div>
+      <h3>🔬 NSF Award for Future Manufacturing – CAR T-Cell Therapy</h3>
+      <p>Dr. Tida received an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2427896" target="_blank"><strong>NSF Future Manufacturing grant</strong></a> as Co-PI. The award supports research into novel, low-cost, viral-free manufacturing strategies for CAR T-cell therapies, developing distributed, mRNA-based methods to engineer Chimeric Antigen Receptor T-cells without viral gene transfer — aiming to reduce costs and improve safety for advanced cell-based cancer treatments.</p>
     </div>
 
+    <div class="news-card">
+      <div class="news-date">February 2025</div>
+      <h3>🏆 NSF CAREER Award Received by Dr. Tida</h3>
+      <p>We are proud to announce that Dr. Umamaheswara Rao Tida has received the prestigious <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2443244" target="_blank"><strong>NSF CAREER Award</strong></a> — $553,560 over 5 years (2025–2030) — to support research on advanced process technology-based EDA frameworks for efficient Monolithic 3D Integration. This award was received on the very first attempt, reflecting the transformative potential and rigor of the proposed research.</p>
+    </div>
 
+  </div>
+</div>
 
-  </section>
-  <footer>
-    <p>&copy; 2025 BISON CAD Lab. Built with ❤️ for IC Design & ML Hardware Enthusiasts.</p>
-  </footer>
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand"><span class="dot">◆</span> BISON CAD</div>
+      <p class="footer-tagline">IC Design Automation &amp; Hardware for Machine Learning at North Dakota State University.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="news.html">News</a>
+    </div>
+    <div class="footer-col">
+      <h4>Lab</h4>
+      <a href="teaching.html">Teaching</a>
+      <a href="mentoring.html">Mentoring</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://scholar.google.com/citations?user=gwUrkUwAAAAJ" target="_blank">Google Scholar</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:umamaheswara.tida@ndsu.edu">umamaheswara.tida@ndsu.edu</a>
+      <a href="tel:+17012315369">(701) 231-5369</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 BISON CAD Lab · North Dakota State University</span>
+  </div>
+</footer>
+
 </body>
 </html>
