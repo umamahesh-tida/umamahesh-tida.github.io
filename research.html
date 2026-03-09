@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="BISON CAD Lab Research â EDA for Monolithic 3D IC, ML for ASIC Design, and ASIC for LLM Acceleration at NDSU." />
-  <title>Research â BISON CAD @ NDSU</title>
+  <meta name="description" content="BISON CAD Lab Research – EDA for Monolithic 3D IC, ML for ASIC Design, and ASIC for LLM Acceleration at NDSU." />
+  <title>Research – BISON CAD @ NDSU</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     .thrust-section {
@@ -46,9 +46,9 @@
     .thrust-content p { color: #444; line-height: 1.7; margin-bottom: 0.9rem; font-size: 0.97rem; }
     .thrust-highlights { list-style: none; padding: 0; margin: 0 0 1.2rem 0; }
     .thrust-highlights li { padding: 0.4rem 0 0.4rem 1.5rem; position: relative; color: #444; font-size: 0.93rem; }
-    .thrust-section.t1 .thrust-highlights li::before { content: "â¸"; position: absolute; left: 0; color: #002d72; font-weight: 700; }
-    .thrust-section.t2 .thrust-highlights li::before { content: "â¸"; position: absolute; left: 0; color: #f0a500; font-weight: 700; }
-    .thrust-section.t3 .thrust-highlights li::before { content: "â¸"; position: absolute; left: 0; color: #388e3c; font-weight: 700; }
+    .thrust-section.t1 .thrust-highlights li::before { content: "▸"; position: absolute; left: 0; color: #002d72; font-weight: 700; }
+    .thrust-section.t2 .thrust-highlights li::before { content: "▸"; position: absolute; left: 0; color: #f0a500; font-weight: 700; }
+    .thrust-section.t3 .thrust-highlights li::before { content: "▸"; position: absolute; left: 0; color: #388e3c; font-weight: 700; }
     .thrust-visual {
       padding: 2rem;
       background: #f8f9fb;
@@ -95,7 +95,7 @@
 <body>
 
 <nav class="navbar">
-  <a href="index.html" class="navbar-brand"><span class="dot">â</span> BISON CAD</a>
+  <a href="index.html" class="navbar-brand"><span class="dot">◆</span> BISON CAD</a>
   <ul class="navbar-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="research.html" class="active">Research</a></li>
@@ -127,18 +127,18 @@
     </div>
     <div class="thrust-body">
       <div class="thrust-content">
-        <p>Monolithic 3D integration stacks multiple device layers on a single die using ultra-thin inter-tier dielectrics, enabling nanoscale Metal Inter-Layer Vias (MIVs) â 1,000Ã smaller than TSVs. This unlocks unprecedented transistor density but demands entirely new EDA flows that conventional tools cannot provide.</p>
-        <p>Our <strong>NSF CAREER-funded</strong> research (2025â2030) develops process-technology-aware EDA frameworks accounting for MIV coupling effects, thermal gradients, back-gate transistor opportunities, and heterogeneous substrate integration.</p>
+        <p>Monolithic 3D integration stacks multiple device layers on a single die using ultra-thin inter-tier dielectrics, enabling nanoscale Metal Inter-Layer Vias (MIVs) — 1,000× smaller than TSVs. This unlocks unprecedented transistor density but demands entirely new EDA flows that conventional tools cannot provide.</p>
+        <p>Our <strong>NSF CAREER-funded</strong> research (2025–2030) develops process-technology-aware EDA frameworks accounting for MIV coupling effects, thermal gradients, back-gate transistor opportunities, and heterogeneous substrate integration.</p>
         <ul class="thrust-highlights">
           <li>Process-aware placement &amp; routing with MIV keep-out-zone shielding</li>
-          <li>Back-gate transistor utilization â <strong>21% standard cell area reduction</strong></li>
+          <li>Back-gate transistor utilization — <strong>21% standard cell area reduction</strong></li>
           <li>Dual-purpose MIV exploitation for on-chip memory and logic</li>
           <li>Thermal and thermo-mechanical stress modeling across stacked tiers</li>
           <li>OpenROAD integration for open-source M3D EDA flows</li>
         </ul>
-        <span class="badge badge-navy">NSF CAREER $553K Â· 2025â2030</span>
-        <span class="badge badge-navy">NSF CRII $175K Â· 2021â2023</span>
-        <span class="badge badge-gold">IEEE TCAD Â· TVLSI Â· IEEE Access</span>
+        <span class="badge badge-navy">NSF CAREER $553K · 2025–2030</span>
+        <span class="badge badge-navy">NSF CRII $175K · 2021–2023</span>
+        <span class="badge badge-gold">IEEE TCAD · TVLSI · IEEE Access</span>
       </div>
       <div class="thrust-visual">
         <div class="thrust-visual-title">Key Results</div>
@@ -147,12 +147,12 @@
           Standard cell area reduction via back-gate transistor utilization in M3D-IC
         </div>
         <div class="result-card">
-          <div class="metric">1,000Ã</div>
-          Smaller MIV interconnects vs. TSVs â enabling true monolithic 3D density scaling
+          <div class="metric">1,000×</div>
+          Smaller MIV interconnects vs. TSVs — enabling true monolithic 3D density scaling
         </div>
         <div class="result-card">
           <div class="metric">NSF CAREER</div>
-          Awarded on <strong>first attempt</strong> â process-aware EDA for M3D integration
+          Awarded on <strong>first attempt</strong> — process-aware EDA for M3D integration
         </div>
       </div>
     </div>
@@ -166,7 +166,7 @@
     </div>
     <div class="thrust-body">
       <div class="thrust-content">
-        <p>Modern ASIC design faces an engineering cost explosion â a complex SoC requires hundreds of engineers and years of effort. BISON CAD harnesses graph neural networks, reinforcement learning, and large language models to dramatically accelerate the ASIC design process from RTL through physical implementation.</p>
+        <p>Modern ASIC design faces an engineering cost explosion — a complex SoC requires hundreds of engineers and years of effort. BISON CAD harnesses graph neural networks, reinforcement learning, and large language models to dramatically accelerate the ASIC design process from RTL through physical implementation.</p>
         <p>Our <strong>SysVCoder</strong> framework fine-tunes Qwen 7B for Verilog RTL generation, achieving state-of-the-art Pass@1/Pass@5. A GAT+PPO reinforcement learning agent drives timing-aware cell placement via OpenROAD.</p>
         <ul class="thrust-highlights">
           <li>GAT + PPO RL agent for timing-aware cell placement via OpenROAD</li>
@@ -176,7 +176,7 @@
           <li>Graph neural network representation of gate-level netlists for timing prediction</li>
         </ul>
         <span class="badge badge-navy">ND EPSCoR IC-AI 2023</span>
-        <span class="badge badge-gold">ISQED Â· ISVLSI Â· ICCD Â· SoCC</span>
+        <span class="badge-gold">ISQED · ISVLSI · ICCD · SoCC</span>
       </div>
       <div class="thrust-visual">
         <div class="thrust-visual-title">Key Results</div>
@@ -186,11 +186,11 @@
         </div>
         <div class="result-card">
           <div class="metric">Qwen 7B</div>
-          Fine-tuned LLM backbone for HDL generation
+          Fine-tuned LLM backbone for Hardware Description Language generation
         </div>
         <div class="result-card">
           <div class="metric">OpenROAD</div>
-          RL placement agent integrated with open-source ASIC EDA flow
+          RL placement agent integrated with open-source ASIC EDA flow via GAT features
         </div>
       </div>
     </div>
@@ -204,7 +204,7 @@
     </div>
     <div class="thrust-body">
       <div class="thrust-content">
-        <p>GPU compute density for LLM inference has improved only ~15% over 2.5 years (H100 â B200), while model sizes have grown orders of magnitude. Purpose-built ASIC accelerators offer the only viable path to efficient LLM deployment at scale and on edge devices.</p>
+        <p>GPU compute density for LLM inference has improved only ~15% over 2.5 years (H100 → B200), while model sizes have grown orders of magnitude. Purpose-built ASIC accelerators offer the only viable path to efficient LLM deployment at scale and on edge devices.</p>
         <p>We design custom <strong>Compute-in-Memory (CIM)</strong> ASIC architectures for LLM acceleration, co-optimizing quantization, compression, and RAG hardware with SRAM-based dataflow to achieve significant gains in MIPS and energy efficiency.</p>
         <ul class="thrust-highlights">
           <li>CIM ASIC architectures for transformer attention and feed-forward layers</li>
@@ -225,7 +225,7 @@
         </div>
         <div class="result-card">
           <div class="metric">~15%</div>
-          GPU compute density improvement over 2.5 years (H100 â B200) â"motivating custom ASICs
+          GPU compute density improvement over 2.5 years (H100→B200) — motivating custom ASICs
         </div>
         <div class="result-card">
           <div class="metric">CIM + RAG</div>
@@ -253,31 +253,31 @@
   <div class="grants-grid">
     <div class="grant-item">
       <div class="grant-meta"><span class="grant-amount">$553,560</span><span class="grant-role">PI</span></div>
-      <div class="grant-text"><strong>NSF CAREER:</strong> Process Technology-based EDA Framework for Efficient Monolithic 3D Integration<br><em>2025â2030 Â· First attempt</em></div>
+      <div class="grant-text"><strong>NSF CAREER:</strong> Process Technology-based EDA Framework for Efficient Monolithic 3D Integration<br><em>2025–2030 · First attempt</em></div>
     </div>
     <div class="grant-item">
       <div class="grant-meta"><span class="grant-amount">$500,000</span><span class="grant-role">Co-PI</span></div>
-      <div class="grant-text"><strong>NSF:</strong> Disposable Microfluidics Device with Integrated RF Electric Fields and ML<br><em>2025â2027</em></div>
+      <div class="grant-text"><strong>NSF:</strong> Disposable Microfluidics Device with Integrated RF Electric Fields and Machine Learning<br><em>2025–2027</em></div>
     </div>
     <div class="grant-item">
       <div class="grant-meta"><span class="grant-amount">$450,000</span><span class="grant-role">Co-PI</span></div>
-      <div class="grant-text"><strong>NSF IRES:</strong> International Research Experience on RFID Sensing System with ML<br><em>2025â2028</em></div>
+      <div class="grant-text"><strong>NSF IRES:</strong> International Research Experience on RFID Sensing System with ML<br><em>2025–2028</em></div>
     </div>
     <div class="grant-item">
       <div class="grant-meta"><span class="grant-amount">$3,914,085</span><span class="grant-role">Co-PI</span></div>
-      <div class="grant-text"><strong>USDA:</strong> Fusion of ML and Electromagnetic Sensors for Real-Time Local Decisions in Agriculture<br><em>2023â2025</em></div>
+      <div class="grant-text"><strong>USDA:</strong> Fusion of ML and Electromagnetic Sensors for Real-Time Local Decisions in Agriculture<br><em>2023–2025</em></div>
     </div>
     <div class="grant-item">
       <div class="grant-meta"><span class="grant-amount">$139,000</span><span class="grant-role">PI</span></div>
-      <div class="grant-text"><strong>USDA:</strong> AI-driven Weed Identification for Herbicide Resistant Weed Control<br><em>2024â2026</em></div>
+      <div class="grant-text"><strong>USDA:</strong> AI-driven Weed Identification for Herbicide Resistant Weed Control<br><em>2024–2026</em></div>
     </div>
     <div class="grant-item">
       <div class="grant-meta"><span class="grant-amount">$174,948</span><span class="grant-role">PI</span></div>
-      <div class="grant-text"><strong>NSF CRII:</strong> Enabling Metal Inter-Layer Via Device Utilization for On-chip Memory<br><em>2021â2023</em></div>
+      <div class="grant-text"><strong>NSF CRII:</strong> Enabling Metal Inter-Layer Via Device Utilization for On-chip Memory<br><em>2021–2023</em></div>
     </div>
     <div class="grant-item">
       <div class="grant-meta"><span class="grant-amount">$250,000</span><span class="grant-role">Co-PI</span></div>
-      <div class="grant-text"><strong>NSF:</strong> Point-of-Care Sensor with Electric Fields and ML for Early Stage Pancreatic Cancer Detection<br><em>2022â2024</em></div>
+      <div class="grant-text"><strong>NSF:</strong> Point-of-Care Sensor with Electric Fields and ML for Early Stage Pancreatic Cancer Detection<br><em>2022–2024</em></div>
     </div>
   </div>
 
@@ -288,7 +288,7 @@
   <div class="grants-grid">
     <div class="grant-item">
       <div class="grant-meta"><span class="grant-amount">$153,889</span><span class="grant-role">Co-PI</span></div>
-      <div class="grant-text"><strong>EDRF:</strong> IoT-Based Sensor for Work Zone Safety Monitoring<br><em>2024â2025</em></div>
+      <div class="grant-text"><strong>EDRF:</strong> IoT-Based Sensor for Work Zone Safety Monitoring<br><em>2024–2025</em></div>
     </div>
     <div class="grant-item">
       <div class="grant-meta"><span class="grant-amount">$15,000</span><span class="grant-role">PI</span></div>
@@ -296,7 +296,7 @@
     </div>
     <div class="grant-item">
       <div class="grant-meta"><span class="grant-amount">$10,000</span><span class="grant-role">PI</span></div>
-      <div class="grant-text"><strong>ND EPSCoR:</strong> Compact Device Utilization for On-chip Applications in M3D ICs<br><em>2020â2021</em></div>
+      <div class="grant-text"><strong>ND EPSCoR:</strong> Compact Device Utilization for On-chip Applications in M3D ICs<br><em>2020–2021</em></div>
     </div>
     <div class="grant-item">
       <div class="grant-meta"><span class="grant-amount">$10,000</span><span class="grant-role">PI</span></div>
@@ -304,7 +304,7 @@
     </div>
     <div class="grant-item">
       <div class="grant-meta"><span class="grant-amount">$5,000</span><span class="grant-role">PI</span></div>
-      <div class="grant-text"><strong>Dakota Digital Academy:</strong> Teaching Development Activities for VLSI Design<br><em>2020â2021</em></div>
+      <div class="grant-text"><strong>Dakota Digital Academy:</strong> Teaching Development Activities for VLSI Design<br><em>2020–2021</em></div>
     </div>
   </div>
 </div>
@@ -312,7 +312,7 @@
 <footer>
   <div class="footer-inner">
     <div>
-      <div class="footer-brand"><span class="dot">â</span> BISON CAD</div>
+      <div class="footer-brand"><span class="dot">◆</span> BISON CAD</div>
       <p class="footer-tagline">IC Design Automation &amp; Hardware for Machine Learning at North Dakota State University.</p>
     </div>
     <div class="footer-col">
@@ -336,7 +336,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>Â© 2026 BISON CAD Lab Â· North Dakota State University</span>
+    <span>© 2026 BISON CAD Lab · North Dakota State University</span>
   </div>
 </footer>
 
