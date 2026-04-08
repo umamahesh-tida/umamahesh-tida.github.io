@@ -801,29 +801,37 @@ footer {
 .pi-profile-card {
   background-color: var(--diploma);
   border-radius: 0.75rem;
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 2rem;
-  align-items: start;
-}
-
-.pi-photo-col {
+  padding: 2.5rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.25rem;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.pi-photo-col img,
 img.pi-photo {
-  width: 360px;
-  height: 360px;
+  width: 300px;
+  height: 300px;
   border-radius: 0.75rem;
   object-fit: cover;
   object-position: center top;
   background: linear-gradient(135deg, var(--regalia) 0%, var(--orange) 100%);
   display: block;
+}
+
+.pi-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0;
+}
+
+.pi-subtitle {
+  font-size: 0.82rem;
+  color: var(--muted-text);
+  letter-spacing: 0.02em;
 }
 
 .pi-links {
@@ -851,29 +859,28 @@ img.pi-photo {
   color: #1A1A1A;
 }
 
-.pi-info-col h3 {
-  font-size: 1.75rem;
-  color: var(--white);
-  margin-bottom: 0.25rem;
-}
-
 .pi-title {
   color: var(--orange);
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   font-size: 1rem;
+  text-align: center;
 }
 
 .pi-bio {
   color: var(--muted-text);
   line-height: 1.8;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
+  text-align: left;
+  max-width: 600px;
 }
 
 .pi-contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
+  width: 100%;
+  text-align: left;
 }
 
 .pi-contact-item {
@@ -965,7 +972,12 @@ img.pi-photo {
   }
 
   .pi-profile-card {
-    grid-template-columns: 1fr;
+    padding: 1.5rem 1rem;
+  }
+
+  img.pi-photo {
+    width: 220px;
+    height: 220px;
   }
 
   .pi-contact-grid {
