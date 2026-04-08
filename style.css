@@ -808,14 +808,14 @@ footer {
   align-items: start;
 }
 
-.pi-photo {
+.pi-photo-col {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
 
-.pi-photo img,
+.pi-photo-col img,
 img.pi-photo {
   width: 360px;
   height: 360px;
