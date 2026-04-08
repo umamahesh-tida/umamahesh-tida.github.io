@@ -817,8 +817,8 @@ footer {
 
 .pi-photo img,
 img.pi-photo {
-  width: 180px;
-  height: 180px;
+  width: 360px;
+  height: 360px;
   border-radius: 0.75rem;
   object-fit: cover;
   object-position: center top;
