@@ -815,12 +815,15 @@ footer {
   gap: 1rem;
 }
 
-.pi-photo img {
+.pi-photo img,
+img.pi-photo {
   width: 180px;
   height: 180px;
   border-radius: 0.75rem;
   object-fit: cover;
+  object-position: center top;
   background: linear-gradient(135deg, var(--regalia) 0%, var(--orange) 100%);
+  display: block;
 }
 
 .pi-links {
