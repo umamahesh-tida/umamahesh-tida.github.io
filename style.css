@@ -1154,6 +1154,32 @@ img.pi-photo {
   text-decoration: underline;
 }
 
+.apply-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.apply-checklist li {
+  padding-left: 1.6rem;
+  position: relative;
+  color: var(--muted-text);
+  line-height: 1.6;
+  font-size: 0.93rem;
+}
+
+.apply-checklist li::before {
+  content: '☐';
+  position: absolute;
+  left: 0;
+  color: var(--orange);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
 /* Right column — news sidebar */
 .home-right {
   background-color: var(--diploma);
