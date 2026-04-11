@@ -744,6 +744,10 @@ footer {
 .footer-inner {
   max-width: 1120px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 3rem;
+  align-items: start;
 }
 
 .footer-brand {
@@ -762,8 +766,10 @@ footer {
 
 .footer-tagline {
   color: var(--muted-text);
-  font-size: 0.95rem;
-  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
 }
 
 .footer-col h4 {
@@ -1391,6 +1397,10 @@ img.pi-photo {
 ═══════════════════════════════════════════════════════ */
 
 @media (max-width: 900px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
   .home-grid {
     grid-template-columns: 1fr;
   }
@@ -1414,6 +1424,10 @@ img.pi-photo {
 }
 
 @media (max-width: 600px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
   .home-wrapper {
     padding: 1.5rem 1rem 3rem;
   }
