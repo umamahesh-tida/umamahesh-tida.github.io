@@ -1409,6 +1409,24 @@ img.pi-photo {
   display: flex;
   flex-direction: column;
   gap: 0;
+  max-height: 260px;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--orange) transparent;
+}
+
+.service-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.service-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.service-list::-webkit-scrollbar-thumb {
+  background-color: var(--orange);
+  border-radius: 2px;
 }
 
 .service-item {
