@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ECE 477/677 – Hardware Design for Machine Learning. Graduate and undergraduate course at NDSU taught by Dr. Umamaheswara Rao Tida." />
+  <title>ECE 477/677 – Hardware Design for Machine Learning | ACE² @ NDSU</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .course-hero { background: var(--dark); color: #fff; padding: 3rem 2rem; }
+    .course-hero .breadcrumb { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.75rem; }
+    .course-hero .breadcrumb a { color: var(--orange); text-decoration: none; }
+    .course-hero .course-tag { display: inline-block; background: var(--orange); color: #fff; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; padding: 0.25rem 0.7rem; border-radius: 4px; margin-bottom: 0.75rem; }
+    .course-hero h1 { font-size: 2rem; margin: 0.3rem 0 0.5rem; }
+    .course-hero p { color: #cbd5e1; max-width: 640px; }
+    .course-body { max-width: 860px; margin: 0 auto; padding: 3rem 2rem; }
+    .course-meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin-bottom: 2.5rem; }
+    .course-meta-card { background: var(--card-bg, #f8fafc); border: 1px solid var(--border, #e2e8f0); border-radius: 8px; padding: 1rem 1.2rem; }
+    .course-meta-card .label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; color: var(--muted, #64748b); text-transform: uppercase; margin-bottom: 0.3rem; }
+    .course-meta-card .value { font-size: 0.95rem; font-weight: 600; color: var(--dark, #0f172a); }
+    .course-section { margin-bottom: 2.5rem; }
+    .course-section h2 { font-size: 1.25rem; border-bottom: 2px solid var(--orange); padding-bottom: 0.4rem; margin-bottom: 1rem; color: var(--dark); }
+    .topic-list { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+    .topic-list li { padding: 0.45rem 0.75rem 0.45rem 1.5rem; position: relative; background: var(--card-bg, #f8fafc); border-radius: 6px; font-size: 0.9rem; }
+    .topic-list li::before { content: "◆"; color: var(--orange); position: absolute; left: 0.5rem; font-size: 0.5rem; top: 50%; transform: translateY(-50%); }
+    .back-link { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--orange); text-decoration: none; font-weight: 600; font-size: 0.9rem; margin-top: 1rem; }
+    .back-link:hover { text-decoration: underline; }
+    @media (max-width: 600px) { .topic-list { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<nav class="navbar">
+  <a href="index.html" class="navbar-brand"><span class="dot">◆</span> ACE<sup>2</sup></a>
+  <ul class="navbar-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="teaching.html" class="active">Teaching</a></li>
+    <li><a href="mentoring.html">Mentoring</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="service.html">Service</a></li>
+  </ul>
+</nav>
+<div class="course-hero">
+  <div style="max-width:860px; margin:0 auto;">
+    <div class="breadcrumb"><a href="teaching.html">Teaching</a> / ECE 477/677</div>
+    <div class="course-tag">ECE 477/677</div>
+    <h1>Hardware Design for Machine Learning</h1>
+    <p>Design and optimization of custom hardware accelerators for deep learning and Edge-AI workloads.</p>
+  </div>
+</div>
+<div class="course-body">
+  <div class="course-meta-grid">
+    <div class="course-meta-card"><div class="label">Course Code</div><div class="value">ECE 477 / 677</div></div>
+    <div class="course-meta-card"><div class="label">Level</div><div class="value">Undergraduate / Graduate</div></div>
+    <div class="course-meta-card"><div class="label">Credits</div><div class="value">3</div></div>
+    <div class="course-meta-card"><div class="label">Offered</div><div class="value">Fall</div></div>
+  </div>
+  <div class="course-section">
+    <h2>Course Overview</h2>
+    <p>This course bridges the gap between machine learning theory and hardware implementation. Students learn to design custom accelerators for neural networks, targeting energy-efficient and high-throughput deployments on ASICs and FPGAs. The 677 (graduate) section includes a deeper treatment of research literature and an independent project on accelerator design or deployment.</p>
+  </div>
+  <div class="course-section">
+    <h2>Topics Covered</h2>
+    <ul class="topic-list">
+      <li>Neural Network Foundations for HW Design</li>
+      <li>Dataflow Architectures and Systolic Arrays</li>
+      <li>Quantization-Aware Design</li>
+      <li>Sparse and Compressed Neural Networks</li>
+      <li>FPGA-Based Accelerator Prototyping</li>
+      <li>Edge-AI Deployment Strategies</li>
+      <li>Memory Bandwidth and On-Chip Storage</li>
+      <li>Transformer and LLM Hardware</li>
+      <li>Power and Thermal Management</li>
+      <li>Case Studies: TPUs, NPUs, Custom ASICs</li>
+    </ul>
+  </div>
+  <div class="course-section">
+    <h2>Course Objectives</h2>
+    <p>Students completing this course will be able to: (1) map neural network computations to hardware dataflows; (2) design and evaluate accelerator architectures for throughput, energy, and area; (3) implement and test a DNN accelerator prototype on FPGA; and (4) critically read and present research papers on ML hardware.</p>
+  </div>
+  <a href="teaching.html" class="back-link">← Back to Teaching</a>
+</div>
+<footer>
+  <div class="footer-inner">
+    <div><div class="footer-brand"><span class="dot">◆</span> ACE<sup>2</sup></div><p class="footer-tagline">IC Design Automation &amp; Hardware for Machine Learning at North Dakota State University.</p></div>
+    <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a></div>
+    <div class="footer-col"><h4>Lab</h4><a href="teaching.html">Teaching</a><a href="mentoring.html">Mentoring</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h4>Contact</h4><a href="mailto:umamaheswara.tida@ieee.org">umamaheswara.tida@ieee.org</a><a href="tel:+17012315369">(701) 231-5369</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 ACE² Lab · North Dakota State University</span></div>
+</footer>
+</body>
+</html>
