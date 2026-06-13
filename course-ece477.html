@@ -20,12 +20,28 @@
     .course-meta-card .value { font-size: 0.95rem; font-weight: 600; color: var(--dark, #0f172a); }
     .course-section { margin-bottom: 2.5rem; }
     .course-section h2 { font-size: 1.25rem; border-bottom: 2px solid var(--orange); padding-bottom: 0.4rem; margin-bottom: 1rem; color: var(--dark); }
+    .module-block { margin-bottom: 1.5rem; }
+    .module-label { display: inline-block; background: var(--dark, #0f172a); color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 4px; margin-bottom: 0.6rem; }
     .topic-list { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
     .topic-list li { padding: 0.45rem 0.75rem 0.45rem 1.5rem; position: relative; background: var(--card-bg, #f8fafc); border-radius: 6px; font-size: 0.9rem; }
     .topic-list li::before { content: "◆"; color: var(--orange); position: absolute; left: 0.5rem; font-size: 0.5rem; top: 50%; transform: translateY(-50%); }
+    .grading-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .grading-card { background: var(--card-bg, #f8fafc); border: 1px solid var(--border, #e2e8f0); border-radius: 8px; padding: 1.2rem; }
+    .grading-card h3 { font-size: 1rem; margin-bottom: 0.75rem; color: var(--dark); }
+    .grading-row { display: flex; justify-content: space-between; padding: 0.35rem 0; border-bottom: 1px solid var(--border, #e2e8f0); font-size: 0.9rem; }
+    .grading-row:last-child { border-bottom: none; }
+    .grading-pct { font-weight: 700; color: var(--orange); }
+    .textbook-list { list-style: none; padding: 0; }
+    .textbook-list li { padding: 0.5rem 0 0.5rem 1.5rem; position: relative; font-size: 0.9rem; border-bottom: 1px solid var(--border, #e2e8f0); }
+    .textbook-list li:last-child { border-bottom: none; }
+    .textbook-list li::before { content: "◆"; color: var(--orange); position: absolute; left: 0; font-size: 0.5rem; top: 50%; transform: translateY(-50%); }
+    .schedule-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    .schedule-table th { background: var(--dark, #0f172a); color: #fff; padding: 0.6rem 0.8rem; text-align: left; font-size: 0.78rem; letter-spacing: 0.05em; }
+    .schedule-table td { padding: 0.55rem 0.8rem; border-bottom: 1px solid var(--border, #e2e8f0); vertical-align: top; }
+    .schedule-table tr.module-row td { background: var(--orange); color: #fff; font-weight: 700; font-size: 0.82rem; letter-spacing: 0.04em; }
     .back-link { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--orange); text-decoration: none; font-weight: 600; font-size: 0.9rem; margin-top: 1rem; }
     .back-link:hover { text-decoration: underline; }
-    @media (max-width: 600px) { .topic-list { grid-template-columns: 1fr; } }
+    @media (max-width: 600px) { .topic-list, .grading-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -40,46 +56,128 @@
     <li><a href="service.html">Service</a></li>
   </ul>
 </nav>
+
 <div class="course-hero">
   <div style="max-width:860px; margin:0 auto;">
     <div class="breadcrumb"><a href="teaching.html">Teaching</a> / ECE 477/677</div>
     <div class="course-tag">ECE 477/677</div>
     <h1>Hardware Design for Machine Learning</h1>
-    <p>Design and optimization of custom hardware accelerators for deep learning and Edge-AI workloads.</p>
+    <p>Techniques for developing energy- and time-efficient ML algorithms, model compression, hardware-aware design, and neural architecture co-design for embedded and edge computing systems.</p>
   </div>
 </div>
+
 <div class="course-body">
+
   <div class="course-meta-grid">
     <div class="course-meta-card"><div class="label">Course Code</div><div class="value">ECE 477 / 677</div></div>
     <div class="course-meta-card"><div class="label">Level</div><div class="value">Undergraduate / Graduate</div></div>
     <div class="course-meta-card"><div class="label">Credits</div><div class="value">3</div></div>
     <div class="course-meta-card"><div class="label">Offered</div><div class="value">Fall</div></div>
+    <div class="course-meta-card"><div class="label">Schedule</div><div class="value">TuTh 12:30 – 1:45 PM</div></div>
+    <div class="course-meta-card"><div class="label">Location</div><div class="value">ECE 213</div></div>
+    <div class="course-meta-card"><div class="label">Prerequisite</div><div class="value">Python Familiarity</div></div>
+    <div class="course-meta-card"><div class="label">Instructor</div><div class="value">Dr. Uma Tida · ECE 101K</div></div>
   </div>
+
   <div class="course-section">
     <h2>Course Overview</h2>
-    <p>This course bridges the gap between machine learning theory and hardware implementation. Students learn to design custom accelerators for neural networks, targeting energy-efficient and high-throughput deployments on ASICs and FPGAs. The 677 (graduate) section includes a deeper treatment of research literature and an independent project on accelerator design or deployment.</p>
+    <p>Machine learning (ML) has gradually become the core component of wide applications in different computing scenarios, ranging from edge computing to cloud computing. This course focuses on resource-constrained edge computing — in particular, embedded systems — and introduces techniques for developing energy- and time-efficient ML algorithms and models. Topics covered include: (i) commonly used ML algorithms, (ii) ML model compression techniques, (iii) hardware-aware machine learning, and (iv) hardware and neural architecture co-design. The course also provides a comprehensive team-based development experience through projects (ECE 677).</p>
   </div>
+
   <div class="course-section">
     <h2>Topics Covered</h2>
-    <ul class="topic-list">
-      <li>Neural Network Foundations for HW Design</li>
-      <li>Dataflow Architectures and Systolic Arrays</li>
-      <li>Quantization-Aware Design</li>
-      <li>Sparse and Compressed Neural Networks</li>
-      <li>FPGA-Based Accelerator Prototyping</li>
-      <li>Edge-AI Deployment Strategies</li>
-      <li>Memory Bandwidth and On-Chip Storage</li>
-      <li>Transformer and LLM Hardware</li>
-      <li>Power and Thermal Management</li>
-      <li>Case Studies: TPUs, NPUs, Custom ASICs</li>
+    <div class="module-block">
+      <div class="module-label">Module 1 — ML in the Software Perspective</div>
+      <ul class="topic-list">
+        <li>Basics of Machine Learning</li>
+        <li>Deep Convolutional Neural Networks</li>
+        <li>Natural Language Processing</li>
+        <li>Large Language Models</li>
+        <li>Advanced ML Network Architectures</li>
+      </ul>
+    </div>
+    <div class="module-block">
+      <div class="module-label">Module 2 — ML in the Hardware Perspective</div>
+      <ul class="topic-list">
+        <li>Model Compression Techniques</li>
+        <li>ML Accelerator Design</li>
+        <li>Neural Architecture Search (NAS)</li>
+        <li>Reinforcement Learning for HW Design</li>
+      </ul>
+    </div>
+    <div class="module-block">
+      <div class="module-label">Module 3 — Efficient Large Language Models</div>
+      <ul class="topic-list">
+        <li>LLM Model Reduction Techniques</li>
+        <li>Efficient Training Strategies</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="course-section">
+    <h2>Learning Objectives</h2>
+    <p>Students who complete this course will be able to:</p>
+    <ul class="topic-list" style="margin-top:0.75rem;">
+      <li>Understand neural network design approaches</li>
+      <li>Apply commonly used neural network architectures</li>
+      <li>Apply network reduction and compression techniques</li>
+      <li>Understand hardware-aware Neural Architecture Search</li>
     </ul>
   </div>
+
   <div class="course-section">
-    <h2>Course Objectives</h2>
-    <p>Students completing this course will be able to: (1) map neural network computations to hardware dataflows; (2) design and evaluate accelerator architectures for throughput, energy, and area; (3) implement and test a DNN accelerator prototype on FPGA; and (4) critically read and present research papers on ML hardware.</p>
+    <h2>Grading Scheme</h2>
+    <div class="grading-grid">
+      <div class="grading-card">
+        <h3>ECE 477 (Undergraduate)</h3>
+        <div class="grading-row"><span>Homework Assignments</span><span class="grading-pct">80%</span></div>
+        <div class="grading-row"><span>Paper Critique Report</span><span class="grading-pct">20%</span></div>
+      </div>
+      <div class="grading-card">
+        <h3>ECE 677 (Graduate)</h3>
+        <div class="grading-row"><span>Homework Assignments</span><span class="grading-pct">40%</span></div>
+        <div class="grading-row"><span>Paper Critique Report</span><span class="grading-pct">10%</span></div>
+        <div class="grading-row"><span>Project</span><span class="grading-pct">50%</span></div>
+      </div>
+    </div>
+    <p style="margin-top:1rem; font-size:0.88rem; color:var(--muted,#64748b);">Grade scale: A ≥ 90% · B 80–90% · C 70–80% · D 60–70% · F &lt; 60%. Curving at instructor's discretion.</p>
   </div>
+
+  <div class="course-section">
+    <h2>Textbooks &amp; References</h2>
+    <ul class="textbook-list">
+      <li><strong>Text 1:</strong> Efficient Processing of Deep Neural Networks</li>
+      <li><strong>Text 2:</strong> <a href="https://lena-voita.github.io/nlp_course.html" target="_blank" style="color:var(--orange);">Natural Language Processing</a> — Lena Voita</li>
+      <li><strong>Text 3:</strong> Data Orchestration in Deep Learning Accelerators</li>
+      <li><strong>Supplementary:</strong> <a href="http://www.deeplearningbook.org/" target="_blank" style="color:var(--orange);">Deep Learning</a> — Goodfellow, Bengio &amp; Courville (free online)</li>
+    </ul>
+  </div>
+
+  <div class="course-section">
+    <h2>Course Schedule (Tentative)</h2>
+    <table class="schedule-table">
+      <thead><tr><th>Week</th><th>Topic</th><th>Reading</th></tr></thead>
+      <tbody>
+        <tr class="module-row"><td colspan="3">Module 1 — Machine Learning in the Software Perspective</td></tr>
+        <tr><td>1 – 2</td><td>Basics of ML</td><td>Text 1, Ch. 1</td></tr>
+        <tr><td>2 – 3</td><td>Deep Convolutional Neural Networks</td><td>Text 1, Ch. 2 &amp; 3</td></tr>
+        <tr><td>4</td><td>Natural Language Processing</td><td>Text 2</td></tr>
+        <tr><td>5</td><td>Large Language Models</td><td>Text 2 &amp; Website</td></tr>
+        <tr><td>6</td><td>Advanced ML Networks</td><td>Website Links</td></tr>
+        <tr class="module-row"><td colspan="3">Module 2 — Machine Learning in the Hardware Perspective</td></tr>
+        <tr><td>7</td><td>Model Compression</td><td>Text 1, Ch. 7, 8 &amp; 9</td></tr>
+        <tr><td>8</td><td>ML Accelerator Design</td><td>Text 3</td></tr>
+        <tr><td>9</td><td>Neural Architecture Search</td><td>Website Links</td></tr>
+        <tr><td>10</td><td>Reinforcement Learning</td><td>Website Links</td></tr>
+        <tr class="module-row"><td colspan="3">Module 3 — Efficient Large Language Models</td></tr>
+        <tr><td>11 – 13</td><td>Model Reduction and Training Techniques</td><td>TBD</td></tr>
+      </tbody>
+    </table>
+  </div>
+
   <a href="teaching.html" class="back-link">← Back to Teaching</a>
 </div>
+
 <footer>
   <div class="footer-inner">
     <div><div class="footer-brand"><span class="dot">◆</span> ACE<sup>2</sup></div><p class="footer-tagline">IC Design Automation &amp; Hardware for Machine Learning at North Dakota State University.</p></div>
