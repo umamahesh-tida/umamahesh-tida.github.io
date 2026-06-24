@@ -1519,3 +1519,12 @@ img.pi-photo {
     text-align: center;
   }
 }
+
+
+/* ═══════════════════════════════════════════════════════
+   COURSE DETAIL PAGES
+═══════════════════════════════════════════════════════ */
+
+/* Topic list items have a light card background — force dark text so it
+   stays readable against the #f8fafc fallback. */
+.topic-list li { color: #0f172a; }
